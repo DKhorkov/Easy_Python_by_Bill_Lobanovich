@@ -1,0 +1,1 @@
+Here are uploaded tasks form Bill Lobanovich bokk "Easy Python"
