@@ -51,19 +51,18 @@ print(f'2){os.path.exists("text3.txt")}')
 
 # Проверка, что объект файл:
 print(f'3){os.path.isfile("text.txt")}')
-print(f'4){os.path.isfile("..")}')
+print(f'4){os.path.isfile("../Chapter_14_files_and_directories")}')
 
 # Проверка, что объект директория:
 print(f'5){os.path.isdir("text.txt")}')
-print(f'6){os.path.isdir("..")}')
+print(f'6){os.path.isdir("./Chapter_14_files_and_directories")}')
 
 # Для работы с файлами используются Unix-подобные команды по типу chmod, chown, copy, move, rename, mkdir, rmdir и т.д.
 
 # например, можно посмотреть список файлов и папок в директории:
-files_and_dirs = os.listdir('Chapter_14')
+files_and_dirs = os.listdir()
 print(files_and_dirs)
-# и вывести все файла, начинающиеся на 't' в папке Chapter_14:
-os.chdir('Chapter_14')
+# и вывести все файла, начинающиеся на 't' в папке Chapter_14_files_and_directories:
 print(glob.glob('t*'), end='\n\n')
 
 
