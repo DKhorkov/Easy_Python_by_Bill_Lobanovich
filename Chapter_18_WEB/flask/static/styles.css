@@ -1,0 +1,30 @@
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.welcome {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: grey;
+}
+
+p {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: yellow;
+    font-weight: bold;
+}
+
+form {
+    margin: 0 auto;
+    width:250px;
+}

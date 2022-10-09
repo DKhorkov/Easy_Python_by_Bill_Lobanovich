@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echo place</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+{% if request.method == 'POST' %}
+  <h1>You are in {{place}}</h1>
+    <p>Go to start point: <a href="{{ url_for('index') }}">Go</a></p>
+{% else %}
+  <h1> We do not know where r u</h1>
+    <form method="post">
+    <label for="place">Place</label>
+    <input name="place" id="place" required>
+    <input type="submit" value="Send place">
+  </form>
+{% endif %}
+<h1></h1>
+</body>
+</html>
