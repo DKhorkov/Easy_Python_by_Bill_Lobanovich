@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is' alive!</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+{% if request.method == 'POST' %}
+<h1>I'm of course referring to <i style="color: {{color}}">{{ thing }}</i>, which is
+    <i style="color: {{color}}">{{ height }}</i> feet tall and <i style="color: {{color}}">{{ color }}</i>.</h1>
+<a href="{{ url_for('home') }}">Back</a>
+{% else %}
+    <form action="{{ url_for('home') }}" method="post">
+        <label for="thing">Thing</label>
+        <input name="thing" id="thing" placeholder="Faust" required>
+        <label for="height">Height</label>
+        <input name="height" id="height" placeholder="2" required>
+        <label for="color">Color</label>
+        <input name="color" id="color" placeholder="red" required>
+        <input class="button" type="submit" value="Send">
+    </form>
+{% endif %}
+</body>
+</html>

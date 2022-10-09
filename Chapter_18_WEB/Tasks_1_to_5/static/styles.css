@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width:250px;
+}
+
+.button {
+    background-color: blue;
+    outline-style: outset;
+    outline-color: red;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 85px;
+}
+
+a {
+    background-color: blue;
+    outline-style: outset;
+    outline-color: red;
+    color: yellow;
+    font-weight: bold;
+    margin-left: 850px;
+}
