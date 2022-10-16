@@ -15,9 +15,14 @@
         <label for="thing">Thing</label>
         <input name="thing" id="thing" placeholder="Faust" required>
         <label for="height">Height</label>
-        <input name="height" id="height" placeholder="2" required>
-        <label for="color">Color</label>
-        <input name="color" id="color" placeholder="red" required>
+        <input type="number" name="height" id="height" placeholder="2" required>
+<!--        <label for="color">Color</label>-->
+<!--        <input name="color" id="color" placeholder="red" required>-->
+        <select name="color" required>
+            <option value="green">green</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+        </select>
         <input class="button" type="submit" value="Send">
     </form>
 {% endif %}
